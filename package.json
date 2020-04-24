@@ -1,0 +1,12 @@
+{
+  "name": "frontend_pet_game",
+  "version": "1.0.0",
+  "description": "This is a project built out by following along with a free live stream by Brian Holt (@holtbt on Twitter) from Frontend Masters (frontendmasters.com, @FrontendMasters on Twitter)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
