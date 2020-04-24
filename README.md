@@ -20,3 +20,9 @@ The suggestion is follow along building the game using HTML, CSS and vanilla JS,
 - Linting
 - Testing
 - Type checking
+
+## Build Process
+
+Since we don't want everything in one js file, we will use a build process to bundle all of our files. We will use `parcel` instead of webpack as our bundler
+
+Parcel will generate `dist/` and `.cache/` - the cache will save time on rebuilds, and `dist` is supposed to save all the compiled css and js
