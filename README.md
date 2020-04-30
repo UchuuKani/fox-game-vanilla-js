@@ -72,14 +72,41 @@ For something to be "delete-able", it needs to be modular. Brian's preference is
 
 ## Init the Project
 
-The idea behind `init.js` is to set up our game, kind of the entry point in the browser
+The idea behind `init.js` is to set up our game, kind of the entry point in the browser. We will have a clock that ticks the game every three seconds.
 
-We will have a clock that ticks the game every three seconds. Could try to use a bunch of `setTimeout`s, but will make the project very difficult to coordinate with all the async stuff going on
+## State Machine
 
-`requestAnimationFrame` is a browser api (look up docs) - basically saying, hey browser, when you're idle call this callback - in reality, the game will tick a lot as the browser is idle a lot
+We will use the concept of a finite state machine to define the allowed states of the game. A recommendation after completing the course is to use `xState` when rewriting the app to end up with cleaner code for modeling state
 
-**Note:** according to MDN, "The window.requestAnimationFrame() method tells the browser that you wish to perform an animation and requests that the browser calls a specified function to update an animation before the next repaint. The method takes a callback as an argument to be invoked before the repaint."
+## UI
 
-- "**Note:** Your callback routine must itself call requestAnimationFrame() if you want to animate another frame at the next repaint."
+**NOTE** emmett.io built into VS Code, used `.inner -> tab` in index.html
 
-**Note:** in our `package.json` file we add a "browserslist" to fix an error around
+Kind of took the styling and html as is and not really putting a ton of thought into it
+
+**NOTE** Brian usually tinkers with CSS in the browser then copies what he likes into the stylesheet
+
+**Note** how is the animation working?
+
+- using `animation` property in `sprites.css`. In example of the sleeping fox, there are four different sleeping sprites and the browser is going through each sprite at an interval to give the impression of animation
+
+## Interacting with the UI
+
+Adding functionality to toggle between highlighting one of the three buttons
+
+## The States
+
+After this is finished, we reach the Game Started Milestone
+
+## Transitioning Between States
+
+Transitioning between day and night
+
+## Pooping
+
+## Death
+
+---
+
+Github actions pretty cool, might be neat to use them in the repo
+Using websockets with a server to allow multiple players to play the same game is another extension to the project
